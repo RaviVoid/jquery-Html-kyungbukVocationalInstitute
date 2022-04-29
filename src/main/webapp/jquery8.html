@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	  $("button").click(function(){
+	    /* console.log("버튼이 눌렸어요."); */
+		  $("#div1").fadeToggle();
+		  $("#div2").fadeToggle("slow");
+		  $("#div3").fadeToggle(3000);
+	  });
+	});
+</script>
+</head>
+<body>
+<button>버튼을 누르고 지구를 구해요.</button>
+<div id="div1" style="display:block">우한 폐렴</div>
+<div id="div2" style="display:block">코로나 생산국</div>
+<div id="div3" style="display:block">짱깨벌레 박멸</div>
+
+</body>
+</html>

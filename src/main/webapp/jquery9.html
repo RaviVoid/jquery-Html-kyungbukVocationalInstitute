@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	  $("button").click(function(){
+	    /* console.log("버튼이 눌렸어요."); */
+		  $("#div1").fadeTo("slow", 0.1);
+		  $("#div2").fadeTo("slow", 0.5);
+		  $("#div3").fadeTo("slow", 1);
+	  });
+	});
+</script>
+</head>
+<body>
+<button>국가별 유용도.</button>
+<div id="div1" style="display:block">중국</div>
+<div id="div2" style="display:block">일본</div>
+<div id="div3" style="display:block">한국</div>
+
+</body>
+</html>
